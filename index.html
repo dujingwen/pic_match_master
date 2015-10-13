@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>连连看</title>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    	
+	<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet"/>
+	<link href="bootstrap/css/bootstrap-responsive.min.css" rel="stylesheet"/>
+  </head>
+  
+  <body>
+    <div class="row">
+    	<div class="span2 offset4">
+    		<p class="lead">best:
+    			<span id="best" class="label label-info">NaN</span>
+    		</p>
+    	</div>
+    	<div class="span2">
+    		<button id="hint" style="margin-top: 5px" class="btn btn-primary" type="button">hint(5)</button>
+    	</div>
+    	<div class="span2">
+    		<button id="rearrange" style="margin-top: 5px" class="btn btn-primary" type="button">rearrange(3)</button>
+    	</div>
+    </div>
+    
+    <div class="row">
+    	<div class ="span2 offset4">
+    		<p class="lead" style="margin-top: 5px" >new record:
+    		</p>
+    	</div>
+    	<div style="margin-top: 5px" class="span3 progress progress-striped">
+    		<div id="bar" class="bar" style="width: 100%"></div>
+    	</div>
+    </div>
+    
+    <div class="row">
+    	<div class="span4 offset4">
+    	
+    	
+    	</div>
+    </div>
+    
+    <div class="row"> 
+    	<div class="span6 offset3">
+    		<canvas position="relative" id="board" width="800" height="600"></canvas>
+    	</div>
+    </div>
+    
+    <div id="myModal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    	<div class="modal-header">
+    		<button type="button" class="close" data-dismiss="modal" aria-hidden="true">x</button>
+    		<h3 id="myModalLabel">Congratulation!</h3>
+    	</div>
+    	<div class="modal-body">
+    		<p class="lead">
+    			you finish in
+    			<span id="score" class="label label-info">107</span>
+    			seconds
+    		</p>
+			<p class="lead" id="newrecord"></p>
+    	</div>
+    	<div class="modal-footer">
+    		<button class=“btn" data-dismiss="modal" aria-hidden="true">关闭</button>
+    	</div>
+    </div>
+  </body>
+
+  <script type="text/javascript" src="bootstrap/js/jquery-1.9.1.js"></script>
+  <script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="base.js"></script>
+  <script type="text/javascript" src="event.js"></script>
+</html>
