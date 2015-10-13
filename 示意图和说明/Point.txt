@@ -1,0 +1,2 @@
+1、Firefox中如果在上一轮点完了hint或者rearrange，刷新玩下一轮就不能点相应的hint和rearrange了。
+   但google浏览器中没有这种问题。
